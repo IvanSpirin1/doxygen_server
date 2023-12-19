@@ -1,0 +1,97 @@
+\hypertarget{classComunicator}{}\doxysection{Класс Comunicator}
+\label{classComunicator}\index{Comunicator@{Comunicator}}
+
+
+Класс \mbox{\hyperlink{classComunicator}{Comunicator}}.  
+
+
+
+
+{\ttfamily \#include $<$Comunicator.\+h$>$}
+
+
+
+Граф связей класса Comunicator\+:
+% FIG 0
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classComunicator_a9f155bd98f25f2a35a7c1c57a6ca7fc7}{Create\+Socket}} (const int \+\_\+port)
+\begin{DoxyCompactList}\small\item\em Создание сокета сервера \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComunicator_a67e0f8a5057f28991938ed7cd9649e7b}{Wait\+Client}} (const int \+\_\+socket)
+\begin{DoxyCompactList}\small\item\em Создание сокета клиента \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComunicator_a6654ec47ca508232899c8ba3b88880b0}{is\+Autorized}} (int work\+\_\+sock, \mbox{\hyperlink{classUsersBase}{Users\+Base}} \+\_\+users\+Base)
+\begin{DoxyCompactList}\small\item\em Авторизация \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classComunicator}{Comunicator}}. 
+
+Для создания сокета сервера и слушания запросов предназначен метод Create\+Socket ~\newline
+Для создания сокета клиента и подключения его к серверу метод Wait\+Client ~\newline
+Для авторизации клиента предназначен метод is\+Autorized ~\newline
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classComunicator_a9f155bd98f25f2a35a7c1c57a6ca7fc7}\label{classComunicator_a9f155bd98f25f2a35a7c1c57a6ca7fc7}} 
+\index{Comunicator@{Comunicator}!CreateSocket@{CreateSocket}}
+\index{CreateSocket@{CreateSocket}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{CreateSocket()}{CreateSocket()}}
+{\footnotesize\ttfamily int Comunicator\+::\+Create\+Socket (\begin{DoxyParamCaption}\item[{const int}]{\+\_\+port }\end{DoxyParamCaption})}
+
+
+
+Создание сокета сервера 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \+\_\+port} & порт \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сокет 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComunicator_a6654ec47ca508232899c8ba3b88880b0}\label{classComunicator_a6654ec47ca508232899c8ba3b88880b0}} 
+\index{Comunicator@{Comunicator}!isAutorized@{isAutorized}}
+\index{isAutorized@{isAutorized}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{isAutorized()}{isAutorized()}}
+{\footnotesize\ttfamily bool Comunicator\+::is\+Autorized (\begin{DoxyParamCaption}\item[{int}]{work\+\_\+sock,  }\item[{\mbox{\hyperlink{classUsersBase}{Users\+Base}}}]{\+\_\+users\+Base }\end{DoxyParamCaption})}
+
+
+
+Авторизация 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em work\+\_\+sock} & сокет клиента \\
+\hline
+\mbox{\texttt{ in}}  & {\em \mbox{\hyperlink{classUsersBase}{Users\+Base}}} & база данных пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сокет клиента 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComunicator_a67e0f8a5057f28991938ed7cd9649e7b}\label{classComunicator_a67e0f8a5057f28991938ed7cd9649e7b}} 
+\index{Comunicator@{Comunicator}!WaitClient@{WaitClient}}
+\index{WaitClient@{WaitClient}!Comunicator@{Comunicator}}
+\doxysubsubsection{\texorpdfstring{WaitClient()}{WaitClient()}}
+{\footnotesize\ttfamily int Comunicator\+::\+Wait\+Client (\begin{DoxyParamCaption}\item[{const int}]{\+\_\+socket }\end{DoxyParamCaption})}
+
+
+
+Создание сокета клиента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \+\_\+socket} & сокет сервера \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Сокет клиента 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Comunicator_8h}{Comunicator.\+h}}\item 
+src/Comunicator.\+cpp\end{DoxyCompactItemize}

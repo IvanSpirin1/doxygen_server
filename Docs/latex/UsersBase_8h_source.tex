@@ -1,0 +1,23 @@
+\hypertarget{UsersBase_8h_source}{}\doxysection{Users\+Base.\+h}
+\label{UsersBase_8h_source}\index{include/UsersBase.h@{include/UsersBase.h}}
+\mbox{\hyperlink{UsersBase_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classUsersBase}{UsersBase}}\{}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classUsersBase_a59d401cf400f2d03ed09b1bd98e1701d}{ParseFile}}(\textcolor{keyword}{const} std::string\& \_pathToFile);}
+\DoxyCodeLine{35         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classUsersBase_ae6d595e2adffda00ef36fbcfb5fe9b78}{AddUser}}(\textcolor{keyword}{const} std::string\& \_login,\textcolor{keyword}{const} std::string\& \_password);}
+\DoxyCodeLine{41         std::string \mbox{\hyperlink{classUsersBase_ab19eb7c4696f66f2d398c2f5630c1262}{getPassword}}(\textcolor{keyword}{const} std::string\& \_login);}
+\DoxyCodeLine{47         \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classUsersBase_a19e2af8883ef30832c78bff5d44e7d54}{isHasUser}}(\textcolor{keyword}{const} std::string\& \_login);}
+\DoxyCodeLine{48         }
+\DoxyCodeLine{49     \textcolor{keyword}{private}:}
+\DoxyCodeLine{50         std::unordered\_map<std::string,std::string> m\_users;}
+\DoxyCodeLine{51 \};}
+
+\end{DoxyCode}

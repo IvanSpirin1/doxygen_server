@@ -1,0 +1,114 @@
+\hypertarget{classUsersBase}{}\doxysection{Класс Users\+Base}
+\label{classUsersBase}\index{UsersBase@{UsersBase}}
+
+
+Класс \mbox{\hyperlink{classUsersBase}{Users\+Base}}.  
+
+
+
+
+{\ttfamily \#include $<$Users\+Base.\+h$>$}
+
+
+
+Граф связей класса Users\+Base\+:
+% FIG 0
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classUsersBase_a59d401cf400f2d03ed09b1bd98e1701d}{Parse\+File}} (const std\+::string \&\+\_\+path\+To\+File)
+\begin{DoxyCompactList}\small\item\em Метод Parse\+File для обратки базы данных пользователей \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUsersBase_ae6d595e2adffda00ef36fbcfb5fe9b78}{Add\+User}} (const std\+::string \&\+\_\+login, const std\+::string \&\+\_\+password)
+\begin{DoxyCompactList}\small\item\em Метод Add\+User для добавления пользователя в базу данных \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUsersBase_ab19eb7c4696f66f2d398c2f5630c1262}{get\+Password}} (const std\+::string \&\+\_\+login)
+\begin{DoxyCompactList}\small\item\em Метод get\+Password возвращает пароль для логина \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{classUsersBase_a19e2af8883ef30832c78bff5d44e7d54}{is\+Has\+User}} (const std\+::string \&\+\_\+login)
+\begin{DoxyCompactList}\small\item\em Метод is\+Has\+User для проверки наличия пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classUsersBase}{Users\+Base}}. 
+
+Для чтения базы данных предназначен метод Parse\+File Для проверки наличия клиента в базе данных предназначен метод is\+Has\+User 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classUsersBase_ae6d595e2adffda00ef36fbcfb5fe9b78}\label{classUsersBase_ae6d595e2adffda00ef36fbcfb5fe9b78}} 
+\index{UsersBase@{UsersBase}!AddUser@{AddUser}}
+\index{AddUser@{AddUser}!UsersBase@{UsersBase}}
+\doxysubsubsection{\texorpdfstring{AddUser()}{AddUser()}}
+{\footnotesize\ttfamily bool Users\+Base\+::\+Add\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+login,  }\item[{const std\+::string \&}]{\+\_\+password }\end{DoxyParamCaption})}
+
+
+
+Метод Add\+User для добавления пользователя в базу данных 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em login} & -\/ логин \\
+\hline
+\mbox{\texttt{ in}}  & {\em password} & -\/ пароль \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод возращает false, если пользователь уже существует 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUsersBase_ab19eb7c4696f66f2d398c2f5630c1262}\label{classUsersBase_ab19eb7c4696f66f2d398c2f5630c1262}} 
+\index{UsersBase@{UsersBase}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!UsersBase@{UsersBase}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily std\+::string Users\+Base\+::get\+Password (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+login }\end{DoxyParamCaption})}
+
+
+
+Метод get\+Password возвращает пароль для логина 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em login} & -\/ логин \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод возращает пустую строку, если пользователь отсутствует 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUsersBase_a19e2af8883ef30832c78bff5d44e7d54}\label{classUsersBase_a19e2af8883ef30832c78bff5d44e7d54}} 
+\index{UsersBase@{UsersBase}!isHasUser@{isHasUser}}
+\index{isHasUser@{isHasUser}!UsersBase@{UsersBase}}
+\doxysubsubsection{\texorpdfstring{isHasUser()}{isHasUser()}}
+{\footnotesize\ttfamily const bool Users\+Base\+::is\+Has\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+login }\end{DoxyParamCaption})}
+
+
+
+Метод is\+Has\+User для проверки наличия пользователя 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em login} & -\/ логин \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод возращает false, если пользователь отсутствует 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUsersBase_a59d401cf400f2d03ed09b1bd98e1701d}\label{classUsersBase_a59d401cf400f2d03ed09b1bd98e1701d}} 
+\index{UsersBase@{UsersBase}!ParseFile@{ParseFile}}
+\index{ParseFile@{ParseFile}!UsersBase@{UsersBase}}
+\doxysubsubsection{\texorpdfstring{ParseFile()}{ParseFile()}}
+{\footnotesize\ttfamily bool Users\+Base\+::\+Parse\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path\+To\+File }\end{DoxyParamCaption})}
+
+
+
+Метод Parse\+File для обратки базы данных пользователей 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \+\_\+path\+To\+User} & base -\/ путь до базы данных пользователей \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод возращает false, если файл недоступен для чтения и если содержиться ошибка в базе данных 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{UsersBase_8h}{Users\+Base.\+h}}\item 
+src/Users\+Base.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+digraph "UsersBase"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UsersBase\n||+ bool ParseFile(const\l std::string &_pathToFile)\l+ bool AddUser(const\l std::string &_login,\l const std::string &\l_password)\l+ std::string getPassword\l(const std::string &_login)\l+ const bool isHasUser\l(const std::string &\l_login)\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Класс UsersBase."];
+}

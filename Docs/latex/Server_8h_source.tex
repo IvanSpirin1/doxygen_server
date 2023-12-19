@@ -1,0 +1,37 @@
+\hypertarget{Server_8h_source}{}\doxysection{Server.\+h}
+\label{Server_8h_source}\index{include/Server.h@{include/Server.h}}
+\mbox{\hyperlink{Server_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Logger_8h}{Logger.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{Comunicator_8h}{Comunicator.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{UsersBase_8h}{UsersBase.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classServer}{Server}}}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classServer_aafaf5f6811be61fdb1845b90168f862d}{ParseCmdLine}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv);}
+\DoxyCodeLine{37     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classServer_a2facf2b56af4e95c599eabf9f0651fb5}{Initialize}}();}
+\DoxyCodeLine{42     \textcolor{keywordtype}{int} \mbox{\hyperlink{classServer_a696259b475a6e10bd029333c07626b21}{Run}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{private}:}
+\DoxyCodeLine{45     std::string m\_usersBasePath;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} m\_targetPort;}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     std::string m\_logFilePath;}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \mbox{\hyperlink{classUsersBase}{UsersBase}} m\_usersBase;}
+\DoxyCodeLine{52     \mbox{\hyperlink{classComunicator}{Comunicator}} m\_communicator;}
+\DoxyCodeLine{53     \mbox{\hyperlink{classLogger}{Logger}} m\_logger;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     std::string getNextArg(\textcolor{keywordtype}{int} argc,\textcolor{keywordtype}{char}** argv);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{bool} isNumber(std::string \_str);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{int} lastArg;}
+\DoxyCodeLine{60 \};}
+
+\end{DoxyCode}

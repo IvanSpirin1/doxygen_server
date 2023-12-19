@@ -1,0 +1,112 @@
+\hypertarget{classLogger}{}\doxysection{Класс Logger}
+\label{classLogger}\index{Logger@{Logger}}
+
+
+Класс \mbox{\hyperlink{classLogger}{Logger}}.  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+
+
+Граф связей класса Logger\+:
+% FIG 0
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classLogger_a474f27fb5909bf93f80b15f04fb38be4}{Initialize}} (const std\+::string \+\_\+path\+To\+Log\+File)
+\begin{DoxyCompactList}\small\item\em Проверка доступности файла \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_ac5eca9ffdf527c725b615bfbc2aa3ede}{Info}} (std\+::string \+\_\+log)
+\begin{DoxyCompactList}\small\item\em Выводы в логи информации \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_a0408acdb79720027ad6890e64fb43dc2}{Error}} (std\+::string \+\_\+log)
+\begin{DoxyCompactList}\small\item\em Выводы в логи ошибки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLogger_ada14f1be85e0ac19cf0de38123c4676c}{Wargning}} (std\+::string \+\_\+log)
+\begin{DoxyCompactList}\small\item\em Выводы в логи предупреждения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс \mbox{\hyperlink{classLogger}{Logger}}. 
+
+Для записи ошибок предназначен методы Info, Error, Warning 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classLogger_a0408acdb79720027ad6890e64fb43dc2}\label{classLogger_a0408acdb79720027ad6890e64fb43dc2}} 
+\index{Logger@{Logger}!Error@{Error}}
+\index{Error@{Error}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily void Logger\+::\+Error (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+log }\end{DoxyParamCaption})}
+
+
+
+Выводы в логи ошибки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \+\_\+log} & запись в файл \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод ничего не возвращает 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogger_ac5eca9ffdf527c725b615bfbc2aa3ede}\label{classLogger_ac5eca9ffdf527c725b615bfbc2aa3ede}} 
+\index{Logger@{Logger}!Info@{Info}}
+\index{Info@{Info}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Info()}{Info()}}
+{\footnotesize\ttfamily void Logger\+::\+Info (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+log }\end{DoxyParamCaption})}
+
+
+
+Выводы в логи информации 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \+\_\+log} & запись в файл \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод ничего не возвращает 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogger_a474f27fb5909bf93f80b15f04fb38be4}\label{classLogger_a474f27fb5909bf93f80b15f04fb38be4}} 
+\index{Logger@{Logger}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily bool Logger\+::\+Initialize (\begin{DoxyParamCaption}\item[{const std\+::string}]{\+\_\+path\+To\+Log\+File }\end{DoxyParamCaption})}
+
+
+
+Проверка доступности файла 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \+\_\+path\+To\+Log\+File} & путь до файла \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод возращает false, если файл недоступен для записи 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLogger_ada14f1be85e0ac19cf0de38123c4676c}\label{classLogger_ada14f1be85e0ac19cf0de38123c4676c}} 
+\index{Logger@{Logger}!Wargning@{Wargning}}
+\index{Wargning@{Wargning}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Wargning()}{Wargning()}}
+{\footnotesize\ttfamily void Logger\+::\+Wargning (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+log }\end{DoxyParamCaption})}
+
+
+
+Выводы в логи предупреждения 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em \+\_\+log} & запись в файл \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Метод ничего не возвращает 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Logger_8h}{Logger.\+h}}\item 
+src/Logger.\+cpp\end{DoxyCompactItemize}

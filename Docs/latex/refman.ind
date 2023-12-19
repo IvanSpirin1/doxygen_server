@@ -1,0 +1,88 @@
+\begin{theindex}
+
+  \item {AddUser}
+    \subitem {UsersBase}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Calculate}
+    \subitem {Calculator}, \hyperpage{5}
+  \item {Calculator}, \hyperpage{5}
+    \subitem {Calculate}, \hyperpage{5}
+  \item {Comunicator}, \hyperpage{6}
+    \subitem {CreateSocket}, \hyperpage{6}
+    \subitem {isAutorized}, \hyperpage{7}
+    \subitem {WaitClient}, \hyperpage{7}
+  \item {CreateSocket}
+    \subitem {Comunicator}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Error}
+    \subitem {Logger}, \hyperpage{8}
+
+  \indexspace
+
+  \item {getPassword}
+    \subitem {UsersBase}, \hyperpage{12}
+
+  \indexspace
+
+  \item {include/Calculator.h}, \hyperpage{15, 16}
+  \item {include/Comunicator.h}, \hyperpage{16}
+  \item {include/Logger.h}, \hyperpage{16, 17}
+  \item {include/Server.h}, \hyperpage{17, 18}
+  \item {include/UsersBase.h}, \hyperpage{19}
+  \item {Info}
+    \subitem {Logger}, \hyperpage{8}
+  \item {Initialize}
+    \subitem {Logger}, \hyperpage{9}
+    \subitem {Server}, \hyperpage{10}
+  \item {isAutorized}
+    \subitem {Comunicator}, \hyperpage{7}
+  \item {isHasUser}
+    \subitem {UsersBase}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Logger}, \hyperpage{8}
+    \subitem {Error}, \hyperpage{8}
+    \subitem {Info}, \hyperpage{8}
+    \subitem {Initialize}, \hyperpage{9}
+    \subitem {Wargning}, \hyperpage{9}
+
+  \indexspace
+
+  \item {ParseCmdLine}
+    \subitem {Server}, \hyperpage{10}
+  \item {ParseFile}
+    \subitem {UsersBase}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Run}
+    \subitem {Server}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Server}, \hyperpage{10}
+    \subitem {Initialize}, \hyperpage{10}
+    \subitem {ParseCmdLine}, \hyperpage{10}
+    \subitem {Run}, \hyperpage{11}
+
+  \indexspace
+
+  \item {UsersBase}, \hyperpage{11}
+    \subitem {AddUser}, \hyperpage{12}
+    \subitem {getPassword}, \hyperpage{12}
+    \subitem {isHasUser}, \hyperpage{12}
+    \subitem {ParseFile}, \hyperpage{13}
+
+  \indexspace
+
+  \item {WaitClient}
+    \subitem {Comunicator}, \hyperpage{7}
+  \item {Wargning}
+    \subitem {Logger}, \hyperpage{9}
+
+\end{theindex}
